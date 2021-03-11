@@ -16,8 +16,8 @@
           Please enter a valid license plate
         </mat-error>
         <mat-form-field class="full-width">
-          <mat-label for="date">Enter date (dd/mm/yyyy)</mat-label>
-          <input #date="ngModel" name="date" required matInput placeholder="Ex. 01/01/2021"
+          <mat-label for="date">Enter date (mm/dd/yyyy)</mat-label>
+          <input #date="ngModel" name="date" required matInput placeholder="Ex. 01/30/2021"
           [(ngModel)]= "input.date" ngModel [pattern]=dateRegex>
        </mat-form-field>
        <mat-error *ngIf="date.errors?.pattern && (date.dirty || date.touched)">
